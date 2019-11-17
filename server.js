@@ -23,7 +23,7 @@ client.on('message', message => {
     }
     if(message.content.includes("fatherbot"))
     {
-        message.react(":rejoice:")
+        message.react("🔥")
     }
     try {
         delete require.cache[require.resolve(`./commands/${cmd}.js`)]
