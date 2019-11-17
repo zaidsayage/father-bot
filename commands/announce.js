@@ -4,7 +4,7 @@ exports.run = (client,message,args, ops) => {
     {
         message.reply("No message to announce.")
     }
-    else if (message.author.id !== ops.ownerID || message.author.id !== ops.adminID) {
+    else if (message.author.id !== ops.ownerID) {
         message.reply('Invalid Permissions.')
     }
     else {
