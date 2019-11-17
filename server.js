@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 // Heroku bot hosting
 http.createServer().listen(port);
 
-const prefix = '?';
+const prefix = '$';
 const ownerID = '139234964699873281';
 const adminID = '427168114770444298';
 const versionID = 'v1.1.0'
