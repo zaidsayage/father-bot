@@ -21,6 +21,10 @@ client.on('message', message => {
     if(!message.content.startsWith(prefix)) {
         return;
     }
+    if(message.content.includes("fatherbot"))
+    {
+        message.react(":rejoice:")
+    }
     try {
         delete require.cache[require.resolve(`./commands/${cmd}.js`)]
         let ops = {
