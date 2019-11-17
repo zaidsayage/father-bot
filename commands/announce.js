@@ -1,6 +1,6 @@
 exports.run = (client,message,args, ops) => {
     const Discord = require('discord.js')
-    if(!args[0])
+    if(!args[0].join(" "))
     {
         message.reply("No message to announce.")
     }
